@@ -1,0 +1,14 @@
+.accordion-custom {
+  font-size:small;
+}
+
+.accordion-body-custom {
+  padding: 0 rem 0rem;
+  font-size: small;
+}
+
+.card-body-custom {
+  flex: 1 1 auto;
+  padding: 0rem 0rem;
+}
+

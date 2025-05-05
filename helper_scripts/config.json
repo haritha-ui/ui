@@ -1,0 +1,20 @@
+{
+  "front_end": {
+    "paths": {
+      "node": "",
+      "serve": "",
+      "build": "",
+      "log": ""
+    },
+    "port":""
+  },
+  "back_end": {
+    "paths": {
+      "gunicorn": "",
+      "python": "",
+      "wsgi": "",
+      "log": ""
+    },
+    "port": ""
+  }
+}

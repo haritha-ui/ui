@@ -1,0 +1,1284 @@
+{
+    "HMC_NAME": {
+        "type": "str",
+        "required": true,
+        "default": "",
+        "help": "Full hostname of HMC"
+    },
+    "FULL_FSP_HOSTNAME": {
+        "type": "str",
+        "required": true,
+        "default": "",
+        "help": "Full hostname for FSP/EBMC system"
+    },
+    "MDT_FILES": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": "MDT files for htx. List of mdts seperated by ','. Ex: mdt.bu,mdt.proc,mdt.xyz"
+    },
+    "TEST_DURATION": {
+        "type": "str",
+        "required": false,
+        "help": "Duration for entire test to run in hours with 'h' appended. Ex:1h"
+    },
+    "BOOTME_CYCLE_DURATION": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "HEALTH_CHECK_FREQUENCY": {
+        "type": "str",
+        "required": false,
+        "help": "Duration for periodic health check to be performed. Ex: 20m for duration to be in minutes or 1h for duration in hours "
+    },
+    "ERRLOGS_TO_COLLECT": {
+        "type": "str",
+        "required": false,
+        "help": "Type of error log check to do. Accepted values are f/a/x/v. Ex: faxv"
+    },
+    "TER_ID": {
+        "type": "int",
+        "required": false,
+        "help": "TER ID for the test"
+    },
+    "TC_ID": {
+        "type": "int",
+        "required": true,
+        "editable": false,
+        "help": "TC id of the test"
+    },
+    "NETWORK_ADAPTER_NAME": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "LPAR_NAMES": {
+        "type": "list",
+        "default": [],
+        "required": false,
+        "help": "List of lpars to be considered for test each separated by ','. Ex: abcd123,xyz123"
+    },
+    "notify_tester": {
+        "type": "bool",
+        "required": false,
+        "default": false,
+        "help": "Boolean value for notifying tester.Any one of true or false"
+    },
+    "EXPECTED_SRC": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": ""
+    },
+    "LPAR_NAME": {
+        "type": "str",
+        "required": false,
+        "default": "",
+        "help": ""
+    },
+    "LPAR_PASSWORD": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "FW_LEVEL": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "ITERATIONS": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "tmgt_mode": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "FW_LEVEL_BEFORE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "FW_LEVEL_AFTER": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "MAXIO": {
+        "type": "bool",
+        "required": false,
+        "help": ""
+    },
+    "SECUREBOOT_ENABLED": {
+        "type": "bool",
+        "required": false,
+        "help": ""
+    },
+    "SAFEMODE": {
+        "type": "bool",
+        "required": false,
+        "default": false,
+        "help": ""
+    },
+    "MAX_MEM_SCRUBING": {
+        "type": "bool",
+        "required": false,
+        "help": ""
+    },
+    "SHAREDPROCESSORS": {
+        "type": "bool",
+        "required": false,
+        "help": ""
+    },
+    "NIST_MODE": {
+        "type": "bool",
+        "required": false,
+        "help": ""
+    },
+    "EXPECTED_ERRPT": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": ""
+    },
+    "EXPECTED_HTXERR": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": ""
+    },
+    "SOURCE_HMC": {
+        "type": "str",
+        "required": true,
+        "default": "",
+        "help": ""
+    },
+    "SOURCE_FSP_HOSTNAME": {
+        "type": "str",
+        "required": true,
+        "default": "",
+        "help": ""
+    },
+    "TARGET_FSP_HOSTNAME": {
+        "type": "str",
+        "required": false,
+        "default": "",
+        "help": ""
+    },
+    "AIX_UNSUPPORTED_PROC_MODES": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": "Provide a list of unsupported aix processor modes seperated by ','. Ex: POWER8,POWER9"
+    },
+    "LINUX_UNSUPPORTED_PROC_MODES": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": "Provide a list of unsupported linux processor modes seperated by ','. Ex: POWER8,POWER9"
+    },
+    "IBM_I_PASSWORDS": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": "Provide a list of IBM i partition password separated by ','."
+    },
+    "VPMEM_LIST": {
+        "type": "NoneType",
+        "required": false,
+        "default": [],
+        "help": "Provide a list of LPARs on which vpmem LUNs need to be created and size of each LUN seperated by ' '. Ex: lpar_name1 1024 5120,lpar_name2 4096"
+    },
+    "AME_FACTOR_DESIRED": {
+        "type": "float",
+        "required": false,
+        "help": ""
+    },
+    "QoS_DESIRED": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "LPAR_PROC_COMPAT_MODE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "NETWORK_ADAPTER_LOC": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "MDT_REQUIRES_ADDITIONAL_DISKS": {
+        "type": "bool",
+        "required": false,
+        "help": ""
+    },
+    "MDT_FILES_LIST1": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": ""
+    },
+    "MDT_FILES_LIST2": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": ""
+    },
+    "MDT_FILES_LIST3": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": ""
+    },
+    "STORAGE_ADAPTER_NAME": {
+        "type": "str",
+        "required": false,
+        "default": "",
+        "help": ""
+    },
+    "STORAGE_ADAPTER_LOC": {
+        "type": "str",
+        "required": false,
+        "default": "",
+        "help": ""
+    },
+    "VIOS_NAMES": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": ""
+    },
+    "vios_len": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "drc": {
+        "type": "NoneType",
+        "required": false,
+        "help": ""
+    },
+    "loccode": {
+        "type": "NoneType",
+        "required": false,
+        "help": ""
+    },
+    "MDT_FILE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "testmode": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "resources": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "scripts": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "support": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "logdir": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "OPERATION": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "device": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "mdt": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "perm": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "dr": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "diag": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "hop": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "legacy": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "ENTER_DWELL_TIME": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "ENTER_UTILIZATION_PERCENT": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "EXIT_DWELL_TIME": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "EXIT_UTILIZATION_PERCENT": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "IPS": {
+        "type": "bool",
+        "required": false,
+        "help": ""
+    },
+    "myucode": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "devices": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "DEVICE_NAME": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "STRESS_FOCUS": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "SUPER_PIPE_IO": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "PARAMETER_BEST": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "BEST_TIME": {
+        "type": "int",
+        "required": false,
+        "default": 0,
+        "help": ""
+    },
+    "COMMENTS": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "BOOTME_CYCLE_PERIOD": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "nFlag": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "numberOfInjections": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "SOURCE_SYSTEM": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "operation": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "mirrored": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "WAIT_TIME": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "ADAPTER": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "DRIVE_TYPE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "SYSTEM_NAME": {
+        "type": "str",
+        "required": false,
+        "default": "",
+        "help": ""
+    },
+    "HMC_PASSWORD": {
+        "type": "str",
+        "required": false,
+        "default": "",
+        "help": ""
+    },
+    "LOC_CODE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "RAID_TYPE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "Pre_HTX_runtime": {
+        "type": "NoneType",
+        "required": false,
+        "help": ""
+    },
+    "mymint": {
+        "type": "NoneType",
+        "required": false,
+        "help": ""
+    },
+    "mymaxt": {
+        "type": "NoneType",
+        "required": false,
+        "help": ""
+    },
+    "myont": {
+        "type": "NoneType",
+        "required": false,
+        "help": ""
+    },
+    "halt_on_error": {
+        "type": "NoneType",
+        "required": false,
+        "help": ""
+    },
+    "src": {
+        "type": "NoneType",
+        "required": false,
+        "help": ""
+    },
+    "blowoff": {
+        "type": "NoneType",
+        "required": false,
+        "help": ""
+    },
+    "VIOS_LIST": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": ""
+    },
+    "VNIC_QTY": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "backing_dev_locations": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "no_backing_devices": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "ADAPTER_NAME": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "duration": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "reb": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "camss": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "net": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "hdd": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "ri": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "UPDATE_RQM": {
+        "type": "bool",
+        "required": false,
+        "help": ""
+    },
+    "nohtx": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "verbose": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "LPAR_USER": {
+        "type": "str",
+        "required": false,
+        "default": "",
+        "help": ""
+    },
+    "slot_no": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "TARGET_HMC": {
+        "type": "str",
+        "required": false,
+        "default": "",
+        "help": ""
+    },
+    "LOOP": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "ADAPTER_SLOT": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "SOURCE_VIOS_LIST": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": ""
+    },
+    "TARGET_VIOS_LIST": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": ""
+    },
+    "BACKING_DEVS": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "LPAR": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "HTX_RUNTIME": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "LPARID_RANGE": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "HTX_TEST_DURATION": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "MDT_AIX": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "MDT_LINUX": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "WAIT_TIME_BEFORE_INJECT_DIMM_ERROR": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "WAIT_TIME_AFTER_INJECT_DIMM_ERROR": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "MACHINE_TYPE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "MONITOR_DURATION_BEFORE_INJECT_DIMM_ERR": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "MONITOR_DURATION_AFTER_INJECT_DIMM_ERR": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "HTX_DURATION_BEFORE_INJECT_DIMM_ERR": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "HTX_DURATION_AFTER_INJECT_DIMM_ERR": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "BOOTME_PERIOD": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "PNOR_IMAGE": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "KEY_TYPES": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "FSP_LOG_FILE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "HTX_MDT": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "MDT1_TEST_DURATION": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "MDT2_TEST_DURATION": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "QUANTITY": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "DLPAR_RESOURCE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "DEST_LPAR_ID_INCREMENT_FACTOR": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "POST_LPM_HTX_DURATION": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "NUM_ACTIVE_MIGRATIONS_CONFIGURED": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "SOURCE_VIOS1_FCS_PORT": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "SOURCE_VIOS2_FCS_PORT": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "TARGET_VIOS1_FCS_PORT": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "TARGET_VIOS2_FCS_PORT": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "RR_SRC_SYS_STATE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "RR_TGT_SYS_STATE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "PRE_POST_RR_HTX_DURATION": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "SOURCE_MSP": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "DESTINATION_MSP": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "MIGRATION_DURATION": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "LPM_LOOP_COUNT": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "SOURCE_SYSTEM_NAME": {
+        "type": "str",
+        "required": false,
+        "default": "",
+        "help": ""
+    },
+    "TARGET_SYSTEM_NAME": {
+        "type": "str",
+        "required": false,
+        "default": "",
+        "help": ""
+    },
+    "VIOS_MAX_VIRTUAL_SLOTS": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "PARTITION_MAX_VIRTUAL_SLOTS": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "LPARS_ON_TARGET_WITH_RESOURCES_CAN_BE_STOLEN": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "PRE_AND_POST_RR_HTX_DURATION": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "TARGET1_FSP_HOSTNAME": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "TARGET2_FSP_HOSTNAME": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "TARGET1_LPARS": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "TARGET2_LPARS": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "MODE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "PROC_QUANTITY": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "MEM_QUANTITY": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "DUMMY_SERVER_VSCSI_SLOT_STARTING_NUM": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "DUMMY_CLIENT_VSCSI_SLOT_NUM": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "SOURCE_SYSTEM_HMC": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "TARGET_A_SYSTEM_HMC": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "TARGET_B_SYSTEM_HMC": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "SOURCE_SYSTEM_FSP": {
+        "type": "str",
+        "required": true,
+        "default": "",
+        "help": ""
+    },
+    "TARGET_A_SYSTEM_FSP": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "TARGET_B_SYSTEM_FSP": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "TARGET_A_SYSTEM_NAME": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "TARGET_B_SYSTEM_NAME": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "HDDW_TEARDOWN": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "VSWITCHES_SOURCE_TO_TARGET": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "VSWITCHES_TARGET_TO_SOURCE": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "SOURCE_SHARED_PROC_POOL_NAME": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "TARGET_SHARED_PROC_POOL_NAME": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "FC_PORT_NAME": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "HTX_POST_MIGRATION_RUNTIME": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "LOOPS": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "RESOURCE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "NO_BACKING_DEVICES": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "DURATION": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "NUMBER_OF_PORTS": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "slot_ids": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "SOURCE_ADAPTER_SLOT": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "SOURCE_NUMBER_OF_PORTS": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "TARGET_ADAPTER_SLOT": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "TARGET_NUMBER_OF_PORTS": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "n_VFs": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "locationcode": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "vlan_settings": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "vlan_id": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "capacity": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "locationcode_woslot": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "${locationcode}": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "${vlan_settings}": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "${vlan_id}": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "${capacity}": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "vNIC_Quantity": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "BACKING_DEVICES_LOCATIONS": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "SOURCE_VIOS": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "TARGET_VIOS": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "start_bootme": {
+        "type": "bool",
+        "required": false,
+        "help": ""
+    },
+    "bootme_mode_type": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "bootme_period": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "EXPECTED_STATUS": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "SCENARIO": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "AFFINITY_GROUP1": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "AFFINITY_GROUP2": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "DESIRED_PROCS": {
+        "type": "NoneType",
+        "required": false,
+        "help": ""
+    },
+    "DESIRED_PROC_UNITS": {
+        "type": "NoneType",
+        "required": false,
+        "help": ""
+    },
+    "PROC_TYPE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "INTERFACE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "OS": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "MDT_FILES_AIX": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "MDT_FILES_LINUX": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "DEVICE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "VLAN_ID": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "PPT_RATIO": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "PERF_LEVEL": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "SECURE_BOOT_MODE": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "copy_logs": {
+        "type": "bool",
+        "required": false,
+        "help": ""
+    },
+    "VF_Quantity": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "LOCATION_CODE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "LPAR_NAMES_1": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": ""
+    },
+    "LPAR_NAMES_2": {
+        "type": "list",
+        "required": false,
+        "default": [],
+        "help": ""
+    },
+    "FIRST_SYSTEM_LPAR_NAMES": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "SECOND_SYSTEM_LPAR_NAMES": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "FIRST_SYSTEM_HMC": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "SECOND_SYSTEM_HMC": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "THIRD_SYSTEM_HMC": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "FIRST_SYSTEM_FSP": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "SECOND_SYSTEM_FSP": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "THIRD_SYSTEM_FSP": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "THIRD_SYSTEM_LPAR_NAMES": {
+        "type": "list",
+        "required": false,
+        "help": ""
+    },
+    "UPDATE_STELA": {
+        "type": "bool",
+        "required": false,
+        "help": ""
+    },
+    "run_mode": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "NUM_VFs": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "SIZE": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "LPAR_ID": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    },
+    "ITERATION": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "HTX_loop": {
+        "type": "int",
+        "required": false,
+        "help": ""
+    },
+    "ENERGY_MODE": {
+        "type": "str",
+        "required": false,
+        "help": ""
+    }
+}

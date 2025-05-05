@@ -1,0 +1,15 @@
+
+FROM    python:3.9.10-slim-buster
+WORKDIR /backend
+EXPOSE  8000
+COPY    backend/ .
+COPY    pip_deps/ ./pip_deps
+ENV     CRYPTOGRAPHY_DONT_BUILD_RUST=1
+
+RUN     apt-get update && \
+        apt-get -y install procps && \
+        rm -rf /var/lib/apt/lists/* && \
+        python -m pip install --no-index --find-links=./pip_deps -r /backend/requirements.txt && \
+        rm -rf ./pip_deps
+WORKDIR /backend/server_ui
+CMD     gunicorn -b 0.0.0.0:8000 server_ui.wsgi -t 0 --preload -w 1 --threads 10

@@ -1,0 +1,6 @@
+{
+  "python.analysis.extraPaths": [
+    "./venv2/lib/python3.9/site-packages",
+    "./Power-HST-Automation/robot/libraries"
+  ]
+}

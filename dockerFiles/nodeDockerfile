@@ -1,0 +1,8 @@
+
+FROM    node:16.15.1-buster-slim
+
+WORKDIR /frontend
+EXPOSE  3000
+COPY    frontend/ .
+RUN     npm install && npm install -g serve && npm run build
+CMD     serve -s build

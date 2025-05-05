@@ -1,0 +1,791 @@
+{
+    "HMC_NAME": [
+        "str",
+        "NoneType"
+    ],
+    "FULL_FSP_HOSTNAME": [
+        "str",
+        "NoneType"
+    ],
+    "MDT_FILES": [
+        "list",
+        "NoneType"
+    ],
+    "TEST_DURATION": [
+        "str",
+        "NoneType"
+    ],
+    "BOOTME_CYCLE_DURATION": [
+        "str",
+        "NoneType"
+    ],
+    "HEALTH_CHECK_FREQUENCY": [
+        "str",
+        "NoneType"
+    ],
+    "ERRLOGS_TO_COLLECT": [
+        "str",
+        "NoneType"
+    ],
+    "TER_ID": [
+        "int",
+        "str",
+        "NoneType"
+    ],
+    "TC_ID": [
+        "int",
+        "str"
+    ],
+    "NETWORK_ADAPTER_NAME": [
+        "str",
+        "NoneType"
+    ],
+    "LPAR_NAMES": [
+        "list",
+        "NoneType"
+    ],
+    "notify_tester": [
+        "bool",
+        "NoneType"
+    ],
+    "EXPECTED_SRC": [
+        "list",
+        "str",
+        "NoneType"
+    ],
+    "LPAR_NAME": [
+        "str",
+        "NoneType"
+    ],
+    "LPAR_PASSWORD": [
+        "str",
+        "NoneType"
+    ],
+    "FW_LEVEL": [
+        "str",
+        "NoneType"
+    ],
+    "ITERATIONS": [
+        "int"
+    ],
+    "tmgt_mode": [
+        "str"
+    ],
+    "FW_LEVEL_BEFORE": [
+        "NoneType"
+    ],
+    "FW_LEVEL_AFTER": [
+        "NoneType"
+    ],
+    "MAXIO": [
+        "bool"
+    ],
+    "SECUREBOOT_ENABLED": [
+        "bool"
+    ],
+    "SAFEMODE": [
+        "bool"
+    ],
+    "MAX_MEM_SCRUBING": [
+        "bool"
+    ],
+    "SHAREDPROCESSORS": [
+        "bool"
+    ],
+    "NIST_MODE": [
+        "bool"
+    ],
+    "EXPECTED_ERRPT": [
+        "list",
+        "str",
+        "NoneType"
+    ],
+    "EXPECTED_HTXERR": [
+        "list",
+        "str",
+        "NoneType"
+    ],
+    "SOURCE_HMC": [
+        "str",
+        "NoneType"
+    ],
+    "SOURCE_FSP_HOSTNAME": [
+        "str",
+        "NoneType"
+    ],
+    "TARGET_FSP_HOSTNAME": [
+        "str",
+        "NoneType"
+    ],
+    "AME_FACTOR_DESIRED": [
+        "float"
+    ],
+    "QoS_DESIRED": [
+        "int"
+    ],
+    "LPAR_PROC_COMPAT_MODE": [
+        "str"
+    ],
+    "NETWORK_ADAPTER_LOC": [
+        "str",
+        "NoneType"
+    ],
+    "MDT_REQUIRES_ADDITIONAL_DISKS": [
+        "bool"
+    ],
+    "MDT_FILES_LIST1": [
+        "list"
+    ],
+    "MDT_FILES_LIST2": [
+        "list"
+    ],
+    "MDT_FILES_LIST3": [
+        "list"
+    ],
+    "STORAGE_ADAPTER_NAME": [
+        "NoneType"
+    ],
+    "STORAGE_ADAPTER_LOC": [
+        "NoneType"
+    ],
+    "VIOS_NAMES": [
+        "list",
+        "NoneType"
+    ],
+    "vios_len": [
+        "NoneType"
+    ],
+    "drc": [
+        "NoneType"
+    ],
+    "loccode": [
+        "NoneType"
+    ],
+    "MDT_FILE": [
+        "str"
+    ],
+    "testmode": [
+        "str"
+    ],
+    "resources": [
+        "str"
+    ],
+    "scripts": [
+        "str"
+    ],
+    "support": [
+        "str"
+    ],
+    "logdir": [
+        "NoneType"
+    ],
+    "OPERATION": [
+        "str"
+    ],
+    "device": [
+        "NoneType"
+    ],
+    "mdt": [
+        "NoneType"
+    ],
+    "perm": [
+        "NoneType"
+    ],
+    "dr": [
+        "NoneType"
+    ],
+    "diag": [
+        "NoneType"
+    ],
+    "hop": [
+        "NoneType"
+    ],
+    "legacy": [
+        "NoneType"
+    ],
+    "ENTER_DWELL_TIME": [
+        "int"
+    ],
+    "ENTER_UTILIZATION_PERCENT": [
+        "int"
+    ],
+    "EXIT_DWELL_TIME": [
+        "int"
+    ],
+    "EXIT_UTILIZATION_PERCENT": [
+        "int"
+    ],
+    "IPS": [
+        "bool"
+    ],
+    "myucode": [
+        "str",
+        "NoneType"
+    ],
+    "devices": [
+        "str",
+        "NoneType"
+    ],
+    "DEVICE_NAME": [
+        "NoneType"
+    ],
+    "STRESS_FOCUS": [
+        "str"
+    ],
+    "SUPER_PIPE_IO": [
+        "str"
+    ],
+    "PARAMETER_BEST": [
+        "str"
+    ],
+    "BEST_TIME": [
+        "int"
+    ],
+    "COMMENTS": [
+        "str"
+    ],
+    "BOOTME_CYCLE_PERIOD": [
+        "str"
+    ],
+    "nFlag": [
+        "NoneType"
+    ],
+    "numberOfInjections": [
+        "NoneType"
+    ],
+    "SOURCE_SYSTEM": [
+        "NoneType"
+    ],
+    "operation": [
+        "str"
+    ],
+    "mirrored": [
+        "NoneType"
+    ],
+    "WAIT_TIME": [
+        "str",
+        "NoneType"
+    ],
+    "ADAPTER": [
+        "NoneType"
+    ],
+    "DRIVE_TYPE": [
+        "NoneType"
+    ],
+    "SYSTEM_NAME": [
+        "NoneType"
+    ],
+    "HMC_PASSWORD": [
+        "NoneType"
+    ],
+    "LOC_CODE": [
+        "NoneType"
+    ],
+    "RAID_TYPE": [
+        "NoneType"
+    ],
+    "Pre_HTX_runtime": [
+        "NoneType"
+    ],
+    "mymint": [
+        "NoneType"
+    ],
+    "mymaxt": [
+        "NoneType"
+    ],
+    "myont": [
+        "NoneType"
+    ],
+    "halt_on_error": [
+        "NoneType"
+    ],
+    "src": [
+        "NoneType"
+    ],
+    "blowoff": [
+        "NoneType"
+    ],
+    "VIOS_LIST": [
+        "list"
+    ],
+    "VNIC_QTY": [
+        "int",
+        "str",
+        "NoneType"
+    ],
+    "backing_dev_locations": [
+        "NoneType"
+    ],
+    "no_backing_devices": [
+        "str",
+        "NoneType"
+    ],
+    "ADAPTER_NAME": [
+        "NoneType"
+    ],
+    "duration": [
+        "str"
+    ],
+    "reb": [
+        "NoneType"
+    ],
+    "camss": [
+        "NoneType"
+    ],
+    "net": [
+        "NoneType"
+    ],
+    "hdd": [
+        "NoneType"
+    ],
+    "ri": [
+        "NoneType"
+    ],
+    "UPDATE_RQM": [
+        "bool",
+        "NoneType"
+    ],
+    "nohtx": [
+        "NoneType"
+    ],
+    "verbose": [
+        "str"
+    ],
+    "LPAR_USER": [
+        "str"
+    ],
+    "slot_no": [
+        "str"
+    ],
+    "TARGET_HMC": [
+        "str",
+        "NoneType"
+    ],
+    "LOOP": [
+        "int",
+        "NoneType"
+    ],
+    "ADAPTER_SLOT": [
+        "str",
+        "NoneType"
+    ],
+    "SOURCE_VIOS_LIST": [
+        "list"
+    ],
+    "TARGET_VIOS_LIST": [
+        "list"
+    ],
+    "BACKING_DEVS": [
+        "NoneType"
+    ],
+    "LPAR": [
+        "NoneType"
+    ],
+    "HTX_RUNTIME": [
+        "str"
+    ],
+    "LPARID_RANGE": [
+        "list"
+    ],
+    "HTX_TEST_DURATION": [
+        "str"
+    ],
+    "MDT_AIX": [
+        "str"
+    ],
+    "MDT_LINUX": [
+        "str"
+    ],
+    "WAIT_TIME_BEFORE_INJECT_DIMM_ERROR": [
+        "str"
+    ],
+    "WAIT_TIME_AFTER_INJECT_DIMM_ERROR": [
+        "str"
+    ],
+    "MACHINE_TYPE": [
+        "str"
+    ],
+    "MONITOR_DURATION_BEFORE_INJECT_DIMM_ERR": [
+        "str"
+    ],
+    "MONITOR_DURATION_AFTER_INJECT_DIMM_ERR": [
+        "str"
+    ],
+    "HTX_DURATION_BEFORE_INJECT_DIMM_ERR": [
+        "str"
+    ],
+    "HTX_DURATION_AFTER_INJECT_DIMM_ERR": [
+        "str"
+    ],
+    "BOOTME_PERIOD": [
+        "int"
+    ],
+    "PNOR_IMAGE": [
+        "list",
+        "str"
+    ],
+    "KEY_TYPES": [
+        "list"
+    ],
+    "FSP_LOG_FILE": [
+        "str"
+    ],
+    "HTX_MDT": [
+        "str"
+    ],
+    "MDT1_TEST_DURATION": [
+        "str"
+    ],
+    "MDT2_TEST_DURATION": [
+        "str"
+    ],
+    "QUANTITY": [
+        "int",
+        "NoneType"
+    ],
+    "DLPAR_RESOURCE": [
+        "str"
+    ],
+    "DEST_LPAR_ID_INCREMENT_FACTOR": [
+        "int"
+    ],
+    "POST_LPM_HTX_DURATION": [
+        "str"
+    ],
+    "NUM_ACTIVE_MIGRATIONS_CONFIGURED": [
+        "NoneType"
+    ],
+    "SOURCE_VIOS1_FCS_PORT": [
+        "NoneType"
+    ],
+    "SOURCE_VIOS2_FCS_PORT": [
+        "NoneType"
+    ],
+    "TARGET_VIOS1_FCS_PORT": [
+        "NoneType"
+    ],
+    "TARGET_VIOS2_FCS_PORT": [
+        "NoneType"
+    ],
+    "RR_SRC_SYS_STATE": [
+        "str"
+    ],
+    "RR_TGT_SYS_STATE": [
+        "str"
+    ],
+    "PRE_POST_RR_HTX_DURATION": [
+        "str"
+    ],
+    "SOURCE_MSP": [
+        "str"
+    ],
+    "DESTINATION_MSP": [
+        "str"
+    ],
+    "MIGRATION_DURATION": [
+        "str",
+        "NoneType"
+    ],
+    "LPM_LOOP_COUNT": [
+        "int"
+    ],
+    "SOURCE_SYSTEM_NAME": [
+        "str",
+        "NoneType"
+    ],
+    "TARGET_SYSTEM_NAME": [
+        "str",
+        "NoneType"
+    ],
+    "VIOS_MAX_VIRTUAL_SLOTS": [
+        "int"
+    ],
+    "PARTITION_MAX_VIRTUAL_SLOTS": [
+        "int"
+    ],
+    "LPARS_ON_TARGET_WITH_RESOURCES_CAN_BE_STOLEN": [
+        "list"
+    ],
+    "PRE_AND_POST_RR_HTX_DURATION": [
+        "str"
+    ],
+    "TARGET1_FSP_HOSTNAME": [
+        "NoneType"
+    ],
+    "TARGET2_FSP_HOSTNAME": [
+        "NoneType"
+    ],
+    "TARGET1_LPARS": [
+        "list"
+    ],
+    "TARGET2_LPARS": [
+        "list"
+    ],
+    "MODE": [
+        "str"
+    ],
+    "PROC_QUANTITY": [
+        "int"
+    ],
+    "MEM_QUANTITY": [
+        "int"
+    ],
+    "DUMMY_SERVER_VSCSI_SLOT_STARTING_NUM": [
+        "int"
+    ],
+    "DUMMY_CLIENT_VSCSI_SLOT_NUM": [
+        "int"
+    ],
+    "SOURCE_SYSTEM_HMC": [
+        "NoneType"
+    ],
+    "TARGET_A_SYSTEM_HMC": [
+        "NoneType"
+    ],
+    "TARGET_B_SYSTEM_HMC": [
+        "NoneType"
+    ],
+    "SOURCE_SYSTEM_FSP": [
+        "NoneType"
+    ],
+    "TARGET_A_SYSTEM_FSP": [
+        "NoneType"
+    ],
+    "TARGET_B_SYSTEM_FSP": [
+        "NoneType"
+    ],
+    "TARGET_A_SYSTEM_NAME": [
+        "NoneType"
+    ],
+    "TARGET_B_SYSTEM_NAME": [
+        "NoneType"
+    ],
+    "HDDW_TEARDOWN": [
+        "str"
+    ],
+    "VSWITCHES_SOURCE_TO_TARGET": [
+        "list"
+    ],
+    "VSWITCHES_TARGET_TO_SOURCE": [
+        "list"
+    ],
+    "SOURCE_SHARED_PROC_POOL_NAME": [
+        "str"
+    ],
+    "TARGET_SHARED_PROC_POOL_NAME": [
+        "str"
+    ],
+    "FC_PORT_NAME": [
+        "str"
+    ],
+    "HTX_POST_MIGRATION_RUNTIME": [
+        "str"
+    ],
+    "LOOPS": [
+        "NoneType"
+    ],
+    "RESOURCE": [
+        "str"
+    ],
+    "NO_BACKING_DEVICES": [
+        "int",
+        "NoneType"
+    ],
+    "DURATION": [
+        "int",
+        "NoneType"
+    ],
+    "NUMBER_OF_PORTS": [
+        "int",
+        "str",
+        "NoneType"
+    ],
+    "slot_ids": [
+        "str"
+    ],
+    "SOURCE_ADAPTER_SLOT": [
+        "str"
+    ],
+    "SOURCE_NUMBER_OF_PORTS": [
+        "str"
+    ],
+    "TARGET_ADAPTER_SLOT": [
+        "str"
+    ],
+    "TARGET_NUMBER_OF_PORTS": [
+        "str"
+    ],
+    "n_VFs": [
+        "list",
+        "int",
+        "NoneType"
+    ],
+    "locationcode": [
+        "list",
+        "NoneType"
+    ],
+    "vlan_settings": [
+        "str"
+    ],
+    "vlan_id": [
+        "int"
+    ],
+    "capacity": [
+        "int",
+        "NoneType"
+    ],
+    "locationcode_woslot": [
+        "NoneType"
+    ],
+    "${locationcode}": [
+        "NoneType"
+    ],
+    "${vlan_settings}": [
+        "str"
+    ],
+    "${vlan_id}": [
+        "int"
+    ],
+    "${capacity}": [
+        "int"
+    ],
+    "vNIC_Quantity": [
+        "int",
+        "NoneType"
+    ],
+    "BACKING_DEVICES_LOCATIONS": [
+        "NoneType"
+    ],
+    "SOURCE_VIOS": [
+        "list",
+        "NoneType"
+    ],
+    "TARGET_VIOS": [
+        "list"
+    ],
+    "start_bootme": [
+        "bool"
+    ],
+    "bootme_mode_type": [
+        "str"
+    ],
+    "bootme_period": [
+        "int"
+    ],
+    "EXPECTED_STATUS": [
+        "NoneType"
+    ],
+    "SCENARIO": [
+        "NoneType"
+    ],
+    "AFFINITY_GROUP1": [
+        "int",
+        "NoneType"
+    ],
+    "AFFINITY_GROUP2": [
+        "int",
+        "NoneType"
+    ],
+    "DESIRED_PROCS": [
+        "NoneType"
+    ],
+    "DESIRED_PROC_UNITS": [
+        "NoneType"
+    ],
+    "PROC_TYPE": [
+        "str"
+    ],
+    "INTERFACE": [
+        "NoneType"
+    ],
+    "OS": [
+        "NoneType"
+    ],
+    "MDT_FILES_AIX": [
+        "list"
+    ],
+    "MDT_FILES_LINUX": [
+        "list"
+    ],
+    "DEVICE": [
+        "NoneType"
+    ],
+    "VLAN_ID": [
+        "int"
+    ],
+    "PPT_RATIO": [
+        "str"
+    ],
+    "PERF_LEVEL": [
+        "str"
+    ],
+    "SECURE_BOOT_MODE": [
+        "int"
+    ],
+    "copy_logs": [
+        "bool"
+    ],
+    "VF_Quantity": [
+        "NoneType"
+    ],
+    "LOCATION_CODE": [
+        "NoneType"
+    ],
+    "LPAR_NAMES_1": [
+        "list"
+    ],
+    "LPAR_NAMES_2": [
+        "list"
+    ],
+    "FIRST_SYSTEM_LPAR_NAMES": [
+        "list"
+    ],
+    "SECOND_SYSTEM_LPAR_NAMES": [
+        "list"
+    ],
+    "FIRST_SYSTEM_HMC": [
+        "str"
+    ],
+    "SECOND_SYSTEM_HMC": [
+        "str"
+    ],
+    "THIRD_SYSTEM_HMC": [
+        "str"
+    ],
+    "FIRST_SYSTEM_FSP": [
+        "str"
+    ],
+    "SECOND_SYSTEM_FSP": [
+        "str"
+    ],
+    "THIRD_SYSTEM_FSP": [
+        "str"
+    ],
+    "THIRD_SYSTEM_LPAR_NAMES": [
+        "list"
+    ],
+    "UPDATE_STELA": [
+        "NoneType"
+    ],
+    "run_mode": [
+        "str"
+    ],
+    "NUM_VFs": [
+        "int"
+    ],
+    "SIZE": [
+        "NoneType"
+    ],
+    "LPAR_ID": [
+        "NoneType"
+    ],
+    "ITERATION": [
+        "NoneType"
+    ],
+    "HTX_loop": [
+        "NoneType"
+    ],
+    "ENERGY_MODE": [
+        "str"
+    ]
+}

@@ -1,0 +1,12 @@
+
+.div-header {
+  padding-left: 0.5rem ;
+  margin-bottom: 0;
+  background-color: rgb(228, 229, 227);
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  text-align: right;
+}
+
+input {
+  width: 65%;
+}

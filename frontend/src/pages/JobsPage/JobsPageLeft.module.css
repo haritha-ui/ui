@@ -1,0 +1,57 @@
+
+.pagination {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: small;
+}
+
+.pagination > ul {
+  padding: 0;
+  margin: 0;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.pagination li > a {
+  padding: 0.5rem;
+  margin: 1px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #d8eef5;
+  border-radius: 2px;
+  min-width: 1rem;
+}
+
+.pagination li > a:focus {
+  outline: none;
+}
+
+.jobsPagination .selected a {
+  box-shadow: 0 0 2px #1b7d9e;
+  background-color: #f3fcff;
+}
+
+.jobsPagination .disabled > a {
+  color: #ccc;
+  background-color: #f8f8f8;
+  border-color: #eee;
+  cursor: default;
+}
+
+.jobsPagination .disabled > a:hover {
+  background-color: #f8f8f8;
+}
+.jobsPagination .break {
+  margin: 0 8px;
+}
+
+.jobsPagination .previous {
+  margin-right: 1rem;
+}
+
+.jobsPagination .next {
+  margin-left: 1rem;
+}

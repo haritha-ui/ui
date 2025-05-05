@@ -1,0 +1,35 @@
+
+.leftpane {
+  width: 20%;
+  height: calc(100% - 50px);
+  float: left;
+  left: 0%;
+  background-color: white;
+  border-collapse: collapse;
+  outline: 1px black;
+  z-index: 0;
+  overflow: auto;
+}
+
+.middlepane {
+  width: 80%;
+  height: calc(100% - 50px);
+  position: inherit;
+  float: left;
+  border-collapse: collapse;
+  background-color: rgb(225, 224, 224);
+  overflow: auto;
+}
+
+/* .dataList {
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+
+.dataList ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */

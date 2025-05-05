@@ -1,0 +1,62 @@
+.leftpane {
+  width: 20%;
+  height: calc(100% - 50px);
+  float: left;
+  left: 0%;
+  background-color: white;
+  border-collapse: collapse;
+  outline: 1px black;
+  z-index: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.middlepane {
+  width: 80%;
+  height: calc(100% - 50px);
+  /* position: inherit; */
+  position: relative;
+  float: left;
+  border-collapse: collapse;
+  border-style: dotted;
+  border-width: 1px;
+  /* background-color: rgb(225, 224, 224); */
+  overflow: auto;
+}
+
+.div-header {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: rgba(174, 192, 156);
+  border-right: 1px solid rgba(0,0,0,.125);
+}
+
+.filter_logo {
+  width: 15px;
+  height: 15px;
+}
+
+/*################################ Scrollbar style ################################################*/
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(131, 130, 130); 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #828181; 
+}
+
+/*################################ Scrollbar style ends ################################################*/
